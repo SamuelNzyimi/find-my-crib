@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a Find My Crib landlord or agent account.">
+  <title>Find My Crib — Sign up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body class="auth-page">
+  <header class="auth-header">
+    <a class="brand" href="index1.html" aria-label="Find My Crib home">
+      <img src="logo.svg" alt="Find My Crib">
+    </a>
+    <a class="auth-home-link" href="index1.html">Back to home <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-intro" aria-labelledby="auth-heading">
+      <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Find My Crib</div>
+      <h1 id="auth-heading">Keep your next move <em>simple.</em></h1>
+      <p>Manage your properties, keep listings current, and connect with students looking for a place near campus.</p>
+      <div class="auth-promise">
+        <span>✓</span>
+        <div><strong>Built for landlords and agents.</strong><small>Clear tools for your everyday rental work.</small></div>
+      </div>
+      <div class="auth-promise">
+        <span>⌂</span>
+        <div><strong>Keep every listing up to date.</strong><small>Show the right availability at the right time.</small></div>
+      </div>
+    </section>
+
+    <section class="auth-card" aria-label="Account access">
+      <div class="auth-card-heading">
+        <div class="auth-tabs" role="tablist" aria-label="Account access options">
+          <a class="auth-tab" id="signin-tab" href="signin.html" role="tab" aria-selected="false">Sign in</a>
+          <a class="auth-tab is-active" id="signup-tab" href="signup.html" role="tab" aria-selected="true">Sign up</a>
+        </div>
+        <p>Create your account and keep your next move simple.</p>
+      </div>
+
+      <form class="auth-form" id="signup-form" novalidate>
+        <div class="field-group">
+          <label for="signup-name">Name</label>
+          <div class="input-form"><span class="input-icon" aria-hidden="true">✦</span><input id="signup-name" name="name" type="text" placeholder="Enter your full name" autocomplete="name" required></div>
+          <small class="field-error" data-error-for="signup-name"></small>
+        </div>
+        <div class="field-group">
+          <label for="signup-email">Email</label>
+          <div class="input-form"><span class="input-icon" aria-hidden="true">@</span><input id="signup-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required></div>
+          <small class="field-error" data-error-for="signup-email"></small>
+        </div>
+        <div class="field-group">
+          <label for="signup-phone">Phone number</label>
+          <div class="input-form"><span class="input-icon" aria-hidden="true">☎</span><input id="signup-phone" name="phone" type="tel" placeholder="e.g. 0712 345 678" autocomplete="tel" inputmode="tel" pattern="[0-9+()\s-]{9,}" required></div>
+          <small class="field-error" data-error-for="signup-phone"></small>
+        </div>
+        <div class="field-group">
+          <label for="signup-role">Role</label>
+          <div class="input-form select-form"><span class="input-icon" aria-hidden="true">⌂</span><select id="signup-role" name="role" required><option value="" selected disabled>Choose your role</option><option value="landlord">Landlord</option><option value="agent">Agent</option></select></div>
+          <small class="field-error" data-error-for="signup-role"></small>
+        </div>
+        <div class="field-group">
+          <label for="signup-password">Password</label>
+          <div class="input-form"><span class="input-icon" aria-hidden="true">⌑</span><input id="signup-password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" minlength="6" required><button class="password-toggle" type="button" data-target="signup-password" aria-label="Show password">Show</button></div>
+          <small class="field-error" data-error-for="signup-password"></small>
+        </div>
+        <button class="auth-submit" type="submit">Create account <span aria-hidden="true">→</span></button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <p class="switch-copy">Already have an account? <a href="signin.html">Sign in</a></p>
+    </section>
+  </main>
+  <script src="signup.js"></script>
+</body>
+</html>

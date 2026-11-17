@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find affordable student housing near your campus with Find My Crib.">
+  <title>Find My Crib — Find a place near campus.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Find My Crib home"><img src="logo.svg" alt="Find My Crib"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#room-types">Room types</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#mobile">Mobile</a>
+        <a href="#faq">FAQ</a>
+        <div class="nav-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode">◐</button>
+          <a class="text-link" href="index2.html">Manage properties</a>
+          <a class="button button-dark button-small" href="listings.html">Browse homes <span aria-hidden="true">→</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-public section-dark" id="home">
+      <div class="container hero-inner">
+        <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Find your next place</div>
+        <h1>Find a room near campus.<br><em>Stay within your budget.</em><br>Feel at home sooner.</h1>
+        <p class="hero-copy">Browse available student homes by campus, room type, walking time, and price. No account needed — just find a place and call the landlord.</p>
+        <div class="audience-switch" role="group" aria-label="Choose your Find My Crib experience">
+          <a class="audience-tab is-active" href="index1.html" aria-current="page">I’m looking for a place</a>
+          <a class="audience-tab" href="index2.html">I manage properties</a>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-light" href="listings.html">Browse homes <span aria-hidden="true">→</span></a>
+          <a class="button button-outline-light" href="#how-it-works">How it works</a>
+        </div>
+        <div class="browser-mockup hero-mockup" aria-label="Student housing search preview">
+          <div class="browser-bar"><span></span><span></span><span></span><small>findmycrib.co.ke</small><b>⋯</b></div>
+          <div class="mockup-content">
+            <div class="mockup-topline"><div><strong>Find a place near campus</strong><small>Compare the details that matter before you call.</small></div><span class="mockup-avatar">FM</span></div>
+            <div class="search-controls"><div class="search-control"><span>⌖</span><div><small>Campus</small><strong>Near CUEA Main Gate</strong></div></div><div class="search-control"><span>⌂</span><div><small>Room type</small><strong>Bedsitter</strong></div></div><button class="mockup-search">Search <span>→</span></button></div>
+            <div class="listing-preview">
+              <div class="listing-image"><span class="listing-tag">AVAILABLE</span><img src="images/bedsitter.png" alt="Bright bedsitter interior"></div>
+              <div class="listing-info"><div class="listing-kicker">Featured near campus</div><h3>Bright bedsitter in Karen</h3><p>10 min walk to CUEA Main Gate · Water included</p><div class="listing-bottom"><strong>KSh 12,500 <small>/ month</small></strong><a class="listing-link" href="#room-types">View home</a></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-strip">
+          <div><strong>0 fees</strong><span>to browse and call</span></div>
+          <div><strong>4 types</strong><span>of rooms to explore</span></div>
+          <div><strong>10 min</strong><span>walking time shown</span></div>
+          <div><strong>1 call</strong><span>to start your next move</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="room-types">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Browse by room type</div>
+          <h2>Start with the space, <em>then find the right fit.</em></h2>
+          <p>Choose the kind of home you need and compare available options near your campus and within your monthly budget.</p>
+        </div>
+        <div class="room-type-grid">
+          <a class="room-type-card room-type-card-dark" href="#browse">
+            <span class="room-type-number">01</span><span class="room-type-icon">⌂</span><h3>Bedsitter</h3>
+            <p>A private, practical space for one.</p><strong>Explore bedsitters <span>→</span></strong>
+          </a>
+          <a class="room-type-card room-type-card-mint" href="#browse">
+            <span class="room-type-number">02</span><span class="room-type-icon">♧</span><h3>Shared apartment</h3>
+            <p>Share a home and keep costs manageable.</p><strong>Explore shared homes <span>→</span></strong>
+          </a>
+          <a class="room-type-card room-type-card-blue" href="#browse">
+            <span class="room-type-number">03</span><span class="room-type-icon">⌂</span><h3>1 bedroom</h3>
+            <p>More room for your routines and study time.</p><strong>Explore 1 bedrooms <span>→</span></strong>
+          </a>
+          <a class="room-type-card room-type-card-cream" href="#browse">
+            <span class="room-type-number">04</span><span class="room-type-icon">⌂</span><h3>2 bedroom</h3>
+            <p>A flexible option for friends or a small family.</p><strong>Explore 2 bedrooms <span>→</span></strong>
+          </a>
+        </div>
+        <div class="public-browse-note" id="browse"><span class="feature-icon tint-green">⌖</span><p><strong>Search by what matters.</strong> Filter results by campus, price range, walking time, and amenities like water, Wi-Fi, and security.</p><a class="button button-dark" href="#how-it-works">See how it works <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered"><div class="eyebrow"><span class="eyebrow-dot"></span> How it works</div><h2>From first search, <em>to your next move.</em></h2><p>No student account, no long forms, and no guessing what a listing really costs.</p></div>
+        <div class="steps">
+          <div class="step"><span>01</span><div class="step-icon">⌖</div><h3>Choose your campus.</h3><p>Start close to the gate and neighbourhood you know.</p></div><div class="step-line"></div>
+          <div class="step"><span>02</span><div class="step-icon">⌂</div><h3>Filter your options.</h3><p>Compare room type, price, amenities, and walking time.</p></div><div class="step-line"></div>
+          <div class="step"><span>03</span><div class="step-icon">☎</div><h3>Call the landlord.</h3><p>See the public contact number and arrange a viewing directly.</p></div><div class="step-line"></div>
+          <div class="step"><span>04</span><div class="step-icon">✓</div><h3>View with confidence.</h3><p>Visit the place and agree on the details in person.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="mobile">
+      <div class="container mobile-section">
+        <div class="mobile-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> Made for your phone</div><h2>Search between lectures, <em>not after them.</em></h2><p>Find My Crib is lightweight, thumb-friendly, and designed for low-end Android phones and low-data conditions.</p><ul class="check-list"><li>Browse without creating an account</li><li>See walking time and monthly price up front</li><li>Tap to call when a place feels right</li></ul><a class="button button-dark" href="listings.html">Start browsing <span>→</span></a></div>
+        <div class="phone-stage"><div class="phone"><div class="phone-speaker"></div><div class="phone-screen"><div class="phone-top"><span>9:41</span><span>⌁ ◒</span></div><div class="phone-logo"><img src="logo.svg" alt="Find My Crib"></div><small>Good morning, Amina</small><h3>Find your next place.</h3><div class="phone-search">⌖ <span>Near CUEA</span> <b>⌕</b></div><div class="phone-card"><div class="phone-card-img"></div><small>10 min walk · AVAILABLE</small><strong>Bright bedsitter in Karen</strong><span>KSh 12,500 / month</span><button>View listing</button></div><div class="phone-nav"><span>⌂<small>Home</small></span><span>⌖<small>Explore</small></span><span>♡<small>Saved</small></span></div></div></div><span class="phone-callout callout-one">10 min walk <i>⌖</i></span><span class="phone-callout callout-two">KSh 12,500 <i>✓</i></span></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="faq">
+      <div class="container faq-container"><div class="section-heading centered"><div class="eyebrow"><span class="eyebrow-dot"></span> Questions, answered</div><h2>Find your next place, <em>with fewer surprises.</em></h2><p>A few things worth knowing before you browse.</p></div><div class="faq-list">
+        <div class="faq-item is-open"><button type="button"><span>Do I need an account to browse listings?</span><b>−</b></button><p>No. Students can browse, filter, and see a landlord's contact number without creating an account.</p></div>
+        <div class="faq-item"><button type="button"><span>What room types can I search?</span><b>+</b></button><p>Listings are organised as bedsitters, shared apartments, 1 bedroom, and 2 bedroom homes.</p></div>
+        <div class="faq-item"><button type="button"><span>How do I know if a listing is still available?</span><b>+</b></button><p>Every public listing has an Available status. Listings marked Taken are hidden from public results.</p></div>
+        <div class="faq-item"><button type="button"><span>Can I call the landlord directly?</span><b>+</b></button><p>Yes. The contact phone number is shown on the listing so you can arrange a viewing directly.</p></div>
+        <div class="faq-item"><button type="button"><span>Does Find My Crib process rent or booking payments?</span><b>+</b></button><p>No. Viewings, agreements, and payments happen directly between the student and landlord outside the platform.</p></div>
+        <div class="faq-item"><button type="button"><span>What should I check before paying?</span><b>+</b></button><p>Visit the property, confirm the terms with the landlord, and never send money before you are comfortable with the arrangement.</p></div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><img src="logo.svg" alt="Find My Crib"><h2>Find a place. <em>Feel at home.</em></h2><p>A clearer way for students to find housing near campus.</p><div class="socials"><a href="#top" aria-label="Instagram">ig</a><a href="#top" aria-label="X">x</a><a href="#top" aria-label="LinkedIn">in</a></div></div><div class="footer-links"><div><h3>Browse</h3><a href="#room-types">Room types</a><a href="#how-it-works">How it works</a><a href="#mobile">Mobile</a></div><div><h3>For managers</h3><a href="index2.html">Management portal</a><a href="#faq">FAQ</a></div><div><h3>Safety</h3><a href="#faq">Before you pay</a><a href="#top">Privacy</a><a href="#top">Terms</a></div></div></div><div class="footer-wordmark">FIND<span>MY</span>CRIB</div><div class="footer-bottom"><span>© 2026 Find My Crib. Built for Nairobi.</span><span>Made for the next move.</span></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

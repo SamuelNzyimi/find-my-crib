@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your Find My Crib landlord or agent account.">
+  <title>Find My Crib — Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body class="auth-page">
+  <header class="auth-header">
+    <a class="brand" href="index1.html" aria-label="Find My Crib home">
+      <img src="logo.svg" alt="Find My Crib">
+    </a>
+    <a class="auth-home-link" href="index1.html">Back to home <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-intro" aria-labelledby="auth-heading">
+      <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Find My Crib</div>
+      <h1 id="auth-heading">Keep your next move <em>simple.</em></h1>
+      <p>Manage your properties, keep listings current, and connect with students looking for a place near campus.</p>
+      <div class="auth-promise">
+        <span>✓</span>
+        <div><strong>Built for landlords and agents.</strong><small>Clear tools for your everyday rental work.</small></div>
+      </div>
+      <div class="auth-promise">
+        <span>⌂</span>
+        <div><strong>Keep every listing up to date.</strong><small>Show the right availability at the right time.</small></div>
+      </div>
+    </section>
+
+    <section class="auth-card" aria-label="Account access">
+      <div class="auth-card-heading">
+        <div class="auth-tabs" role="tablist" aria-label="Account access options">
+          <a class="auth-tab is-active" id="signin-tab" href="signin.html" role="tab" aria-selected="true">Sign in</a>
+          <a class="auth-tab" id="signup-tab" href="signup.html" role="tab" aria-selected="false">Sign up</a>
+        </div>
+        <p>Welcome back. Let’s keep things moving.</p>
+      </div>
+
+      <form class="auth-form" id="signin-form" novalidate>
+        <div class="field-group">
+          <label for="signin-email">Email</label>
+          <div class="input-form"><span class="input-icon" aria-hidden="true">@</span><input id="signin-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required></div>
+          <small class="field-error" data-error-for="signin-email"></small>
+        </div>
+        <div class="field-group">
+          <div class="field-label-row"><label for="signin-password">Password</label><button class="forgot-link" type="button" data-action="forgot">Forgot password?</button></div>
+          <div class="input-form"><span class="input-icon" aria-hidden="true">⌑</span><input id="signin-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="6" required><button class="password-toggle" type="button" data-target="signin-password" aria-label="Show password">Show</button></div>
+          <small class="field-error" data-error-for="signin-password"></small>
+        </div>
+        <label class="remember-row"><input type="checkbox" name="remember"><span>Remember me</span></label>
+        <button class="auth-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <div class="auth-divider"><span>Or continue with</span></div>
+      <div class="social-row"><button class="social-button" type="button"><strong class="google-mark">G</strong> Google</button><button class="social-button" type="button"><strong class="apple-mark">●</strong> Apple</button></div>
+      <p class="switch-copy">Don’t have an account? <a href="signup.html">Sign up</a></p>
+    </section>
+  </main>
+  <script src="signin.js"></script>
+</body>
+</html>

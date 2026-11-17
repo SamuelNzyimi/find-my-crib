@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View student housing listing details on Find My Crib.">
+  <title>Find My Crib — Listing details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index1.html" aria-label="Find My Crib home"><img src="logo.svg" alt="Find My Crib"></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="listings.html">← All listings</a>
+        <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode">◐</button><a class="button button-dark button-small" href="signin.html">Sign in</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="detail-main">
+      <div class="container">
+        <a class="back-link" href="listings.html">← Back to listings</a>
+        <div class="detail-layout">
+          <div class="detail-gallery">
+            <div class="detail-gallery-main"><img id="detail-image" src="images/bedsitter.png" alt="Listing interior"></div>
+            <div class="detail-thumbnails" id="detail-thumbnails"></div>
+          </div>
+          <article class="detail-copy">
+            <span class="listing-tag">AVAILABLE</span>
+            <div class="listing-kicker" id="detail-kicker">Featured near campus</div>
+            <h1 id="detail-title">Bright bedsitter in Karen</h1>
+            <p class="detail-location" id="detail-location">Karen · 10 min walk to CUEA Main Gate</p>
+            <div class="detail-price" id="detail-price">KSh 12,500 <small>/ month per unit</small></div>
+            <div class="detail-divider"></div>
+            <p id="detail-description">A bright, practical home with enough room for studying, resting, and keeping your routine simple. The property is close to the main gate, local shops, and public transport.</p>
+            <div class="detail-facts" id="detail-facts"></div>
+            <a class="button button-dark detail-call" id="detail-call" href="tel:+254712345678">Call landlord <span>☎</span></a>
+            <small class="detail-call-note">No account needed. Arrange a viewing directly with the landlord.</small>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
